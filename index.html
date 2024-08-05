@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="prueba.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coral Sahumerios</title>
+</head>
+<body>
+    
+
+<div class="flex-container" style="background-color: hsl(15, 65%, 64%);">
+        <button class="botonBase miBoton"><a href="Contacto.html" target="_blank">Contacto</a></button>
+        <button class="botonBase miBoton2"><a href="Mayorista.html" target="_blank">Venta Mayorista</a></button>
+        <button class="botonBase miBoton2"><a href="Links.html" target="_blank">Links</a></button>
+        <button class="botonBase miBoton3"><a href="https://www.instagram.com/coral_sahumerios?igsh=MTdhbmpyNDZubmVzaQ==" target="_blank"><i class="fab fa-instagram"></i></a></button>
+        <button class="botonBase miBoton4"><a href="Minorista.html" target="_blank">Venta Minorista</a></button>
+    
+</div>
+<br>
+<br>
+<br>
+    <form id="myForm" style="display: flex; align-items: center;">
+        <select id="mySelect" style="margin-right: 20px;">
+            <option value="Links.html">Links</option>
+            <option value="Mayorista.html">Venta Mayorista</option>
+            <option value="index.html">Pagina principal</option>
+            <option value="Contacto.html">Contacto</option>
+            <option value="Minorista.html">Venta Minorista</option>
+        </select>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            window.location.href = x;
+        }
+    </script>
+
+
+    <h1 style="text-align: center;"><b> </b></h1>
+    <br>
+    <div style="display: flex; justify-content: center;">
+        <img src="logo.jpg" alt="Descripción de la imagen" width="50%" height="800">
+    </div>
+    <p style="font-size:20px;"><b><i><h2></h2></b></i></p>
+    <br>
+    <b><h3> ¿Qué es Coral Sahumerios?</h3></b>
+    <br>
+    <div style="background-color: hsl(15, 65%, 64%);">
+    <p style="text-align:justify;">Un empredimiento familiar basado en las buenas "vibras", aromas, sabores que calman al alma y mucha pasión.</p>
+    </div>
+    <br>
+    <br>
+    <b><h3> ¿Cómo funcionamos?</h3></b>
+    <br>
+<div style="border: 1px solid black; padding: 10px;">
+    <p style="text-align: justify;"> 
+        <ul><li><b> Vos elegís lo que te gusta, nos escribis a nuestro whatsapp o mail con todo lo que queres ordenar y nosotros te armamos el pedido y te lo enviamos personalmente </ul></li>
+    </p>
+</div>
+
+</body>
+</html>
