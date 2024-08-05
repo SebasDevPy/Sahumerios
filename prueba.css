@@ -1,0 +1,150 @@
+body {
+    margin-left: 2%;
+    margin-right: 2%; 
+    background-color: rgb(234, 150, 120); /* Fondo del cuerpo en color coral */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    background-color: #b5b3b3;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 10vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+body.links {
+    background-color: hsl(15, 65%, 64%);
+    color: #D4D4D4;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Color del texto del encabezado */
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 70%;
+    height: 450px;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.botonBase {
+    background-color: hsl(15, 65%, 64%); 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 1em 2em; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em; 
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.miBoton {
+    margin: 0.50em 0.125em;
+}
+
+.miBoton2, .miBoton4 {
+    margin: 0.625em; 
+}
+
+.miBoton3, .miBoton4 {
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+    float: right;
+}
+
+@media screen and (max-width: 1080px) {
+    h1, p {
+        font-size: 1em; 
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .botonBase {
+        padding: 0.75em 1.5em; 
+        font-size: 0.875em;
+    }
+}
+
+.listas-contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #e59173; /* Fondo coral en el contenedor de las listas */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.listas-contenedor ol {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: rgb(248, 248, 248); /* Color del texto de la lista */
+}
+
+li::before {
+    font-size: 1.3em;
+    content: "\2022"; /* Código del círculo */
+    color: rgb(7, 0, 0); /* Cambiar el color del círculo  para contraste */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; /* Espacio entre el círculo y el texto */
+    margin-right: 0.5em; /* Espacio entre el círculo y el texto */
+}
+
+li {
+    color: rgb(5, 0, 0); /* Color del texto de los ítems de la lista */
+}
+
+.columna {
+    flex: 1; /* Asegura que cada columna ocupe un espacio equitativo */
+    padding: 0 10px; /* Espacio alrededor de cada columna */
+    list-style-type: none;
+    margin: 0;
+    border-left: 1px solid #000; /* Línea vertical izquierda */
+}
+
